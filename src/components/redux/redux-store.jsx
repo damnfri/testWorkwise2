@@ -5,8 +5,11 @@ import Todo_reducer from './Todo_reducer'
 
 
 let reducers = combineReducers({
-    Canbans: Canban_reducer,
-    Todos: Todo_reducer,
+    canbans: Canban_reducer,
+    // todos: Todo_reducer,
 });
 
-export  let store = createStore(reducers);
+let store = createStore(reducers);
+export default store;
+
+window.store = store;

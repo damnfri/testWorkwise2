@@ -1,9 +1,10 @@
 .main {
+    height: auto;
     display: inline;
     width: 100px;
-    height: 100px;
+
     margin: 10px;
-    padding: 20px;
+    padding: 50px;
     border: 1px solid #7070a5;
-    background-color: #538e8e;
+    background-color: #b4d2d2;
 }

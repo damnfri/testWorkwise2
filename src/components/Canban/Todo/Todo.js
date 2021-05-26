@@ -1,15 +1,18 @@
 import TodoCss from './Todo.module.css'
 
 
-const Todo = () => {
+//className={check ? css.taskDone : css.task} ref={refs}
+
+const Todo = (props) => {
+
+
     return (
         <div className={TodoCss.main}>
-            <div className={check ? css.taskDone : css.task} ref={refs}>
-                <p>Task number {props.id}</p>
-                <p>Description: {props.title}</p>
-                <p>Do until: {props.deadline}.Mai</p>
-                <button onClick={deleteTodo}>delete</button>
-                <button onClick={done}>Done</button>
+
+            <div >
+                <p>Todo</p>
+                <p className={TodoCss.desc}>{props.title}</p>
+
             </div>
         </div>
     )
